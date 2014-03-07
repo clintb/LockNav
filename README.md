@@ -10,10 +10,12 @@ Use
 ===
 
 ````javascript
-$.lockNav({
-	DisableF5: true,
-	WarnBeforeUnload: true,
-	WarningMessage: 'You may lose information.'
+$(function(){
+	$.lockNav({
+		DisableF5: true,
+		WarnBeforeUnload: true,
+		WarningMessage: 'You may lose information.'
+	});
 });
 ````
 
