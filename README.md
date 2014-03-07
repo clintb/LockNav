@@ -34,7 +34,7 @@ default value = true
 type (string)
 default value = 'By refreshing or navigating away from this page; you may lose data you are currently working with.'
 
-##Getting and Setting Options
+##Getting/Setting Options
 
 ````javascript
 // getting
