@@ -1,7 +1,7 @@
-LockNav
+LockNav : A jQuery Plugin
 =======
 
-This is a jQuery Plugin that can be used to help control how a web page behaves when the end user clicks refresh or uses the back button.
+This is a jQuery Plugin that can be used to help control how a web page will behave when end users click refresh or use the back button of a web browser.
  
 Demonstration: http://clintbray.com/ShareItems/LockNav/
 
@@ -9,8 +9,44 @@ Demonstration: http://clintbray.com/ShareItems/LockNav/
 Use
 ===
 
-`$.lockNav({
+````javascript
+$.lockNav({
 	DisableF5: true,
 	WarnBeforeUnload: true,
-	WarningMessage: 'By refreshing or navigating away from this page; you may lose data you are currently working with.'
-});`
+	WarningMessage: 'You may lose information.'
+});
+````
+
+##Options
+
+
+###DisableF5
+type (boolean)
+default = true
+
+###WarnBeforeUnload
+type (boolean)
+default value = true
+
+###WarningMessage
+type (string)
+default value = 'By refreshing or navigating away from this page; you may lose data you are currently working with.'
+
+##Getting and Setting Options
+
+````javascript
+// getting
+var bWarnBeforeUnload = $.lockNav().settings.WarnBeforeUnload;
+
+// setting
+$.lockNav().settings.WarnBeforeUnload = true;
+````
+
+
+
+
+
+
+
+
+
