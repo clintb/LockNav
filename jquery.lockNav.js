@@ -2,7 +2,7 @@
 
 	try {
 
-		sPluginName = 'lockNavPlugin';
+		var sPluginName = 'lockNavPlugin';
 
 		var LockNav = function(options) {
 			try {
